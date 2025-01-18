@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Login/style.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <title>Login</title>
+</head>
+<body>
+  <div class="wrapper">
+    <section>
+      <div class="form-box">
+        <div class="form-value">
+          <form id="loginForm">
+            <h2>Login</h2>
+            <div class="inputbox">
+              <ion-icon name="mail-outline"></ion-icon>
+              <input type="email" id="email" required>
+              <label for="email">Email kiriting</label>
+            </div>
+            <div class="inputbox">
+              <ion-icon name="lock-closed-outline"></ion-icon>
+              <input type="password" id="password" required>
+              <label for="password">Parol kiriting</label>
+            </div>
+            <div class="forget">
+              <label>
+                <input type="checkbox"> Eslab qolish
+              </label>
+              <label>
+                <a href="#">Parol esdan chiqdi?</a>
+              </label>
+            </div>
+            <button type="submit">Kirish</button>
+            <div class="register">
+              <a href="#">Ro'yxatdan o'tish</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const correctEmail = '10@gmail.com';
+      const correctPassword = '10';
+      if (email === correctEmail && password === correctPassword) {
+        window.location.href = 'dashboard.html';
+      } else {
+        alert('Email yoki parol noto\'g\'ri');
+      }
+    });
+  </script>
+</body>
+</html>

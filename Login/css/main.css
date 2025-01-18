@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'IBM Plex Sans';
+}
+
+.container {
+    max-width: 1263px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 36px;
+    background-color: #DEEEFC;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.header-section {
+    background-image: url(../images/box.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 725px;
+    background-color: #DEEEFC;
+    position: relative;
+
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 182px;
+}
+
+.header-logo a {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #061224E5;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+
+}
+
+header {
+
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.header-logo span {
+    border: 1.5px solid#1064E5;
+    padding: 8px 32px;
+    border-radius: 43px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.19em;
+    transition: all 0.5s;
+}
+
+.header-logo span:hover {
+    background-color: #1064E5;
+    color: #ffffff;
+}
+
+.hero-title {
+    padding-top: 108px;
+    font-family: 'IBM Plex Serif';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 45.5px;
+    width: 586px;
+    animation: slideIn 2s ease-in-out;
+}
+
+.hero-number {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 18px;
+    color: #061224E5;
+    margin-bottom: 14px;
+}
+
+.hero-number span {
+    width: 16px;
+    border: 1.5px solid#1064E5;
+}
+
+.hero h3 {
+    color: #061224E5;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31.2px;
+    margin-bottom: 14px;
+
+}
+
+.hero-desc {
+    color: #061224E5;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.04em;
+    width: 454px;
+    margin-bottom: 31px;
+}
+
+.hero-btn {
+    padding: 17.5px 32px;
+    color: #061224E5;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20.8px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    border-radius: 45px;
+    background-color: transparent;
+    border: 1px solid#1064E5;
+    transition: all 0.5s;
+    cursor: pointer;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.hero-btn:hover {
+    background-color: #1064E5;
+    color: #ffffff;
+}
+
+.hero-bottom-img {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+}
+
+.header-bar {
+    display: none;
+}
+
+.main {
+    margin-top: 54px;
+    margin-bottom: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.main-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    animation: scaleUp 1s ease-in-out;
+}
+
+.main-title {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 65px;
+
+    color: #061224E5;
+}
+
+.main-desc {
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.04em;
+    color: #061224E5;
+    width: 226px;
+
+}
+
+.section-4 {
+    background-color: #D8F1F0;
+}
+
+.desc-container {
+    background-image: url(../images/desc-bacg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 595px;
+}
+
+.desc-job {
+    padding-top: 87px;
+}
+
+.desc-title {
+    font-family: 'IBM Plex Serif';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 8px;
+
+}
+
+.desc-job p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 10px;
+    width: 512px;
+    color: #061224E5;
+
+}
+
+.desc-job button {
+    border: 1.5px solid#1064E5;
+    width: 217px;
+    border-radius: 46px;
+    padding: 10px 32px;
+    margin-top: 19px;
+    background-color: transparent;
+    color: #061224E5;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    transition: all 0.5s;
+
+}
+
+.desc-job button:hover {
+    background-color: #1064E5;
+    color: #ffffff;
+}
+
+.desc-job p::before {
+    content: "-";
+    margin-right: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #061224E5;
+
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.description h2 {
+    font-family: 'IBM Plex Serif';
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 18px;
+    color: #061224E5;
+    animation: colorChange 3s ease-in-out infinite;
+}
+
+.description p {
+    color: #061224;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 484px;
+    margin-top: 10px;
+
+
+}
+
+.description p::before {
+    content: "-";
+    margin-right: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #061224E5;
+}
+
+.description button {
+    padding: 12px 32px;
+    border-radius: 50px;
+    margin-top: 38px;
+    border: 1.5px solid#1064E5;
+    color: #061224E5;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    transition: all 0.5s;
+
+
+}
+
+.description button:hover {
+    background-color: #1064E5;
+    color: #ffffff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #1064E5;
+        color: #fff;
+    }
+    50% {
+        background-color: #D8F1F0;
+        color: #061224E5;
+    }
+    100% {
+        background-color: #1064E5;
+        color: #fff;
+    }
+}
+
+@media screen and (max-width:1263px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-info {
+        gap: 20px;
+    }
+
+    .header-logo {
+
+        gap: 50px;
+    }
+
+    .description p {
+        width: 390px;
+    }
+
+
+}
+
+@media screen and (max-width:992px) {
+    .header-info {
+        display: none;
+    }
+
+    .header-bar {
+        display: block;
+    }
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+
+    .header-section {
+        background-image: url(../images/box-bacg.png);
+
+
+    }
+
+    .hero-title {
+        width: 344px;
+    }
+
+    .hero-desc {
+        width: 324px;
+    }
+
+    .main-card img {
+        width: 42px;
+        margin-bottom: 42px;
+
+    }
+
+    .main-desc {
+        width: 164px;
+    }
+
+    .main-card {
+
+        gap: 15px;
+    }
+
+    .desc-container {
+        background-image: url(../images/desc-bacg1.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        height: 497px;
+        margin-right: -15px;
+    }
+
+    .desc-title {
+        font-size: 36px;
+        line-height: 36px;
+
+
+    }
+
+    .desc-job p {
+        font-size: 16px;
+        line-height: 22px;
+        width: 388px;
+
+    }
+
+    .description p {
+        width: 450px;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .main {
+        flex-wrap: wrap;
+        gap: 36px;
+    }
+
+    .main-card {
+        width: 95%;
+        gap: 33px;
+    }
+
+    .main-desc {
+        width: 205px;
+    }
+
+    .description picture {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:576px) {
+
+    .header-bar {
+        width: 18px;
+    }
+
+    .header-img {
+        width: 91px;
+    }
+
+    .header-section {
+        background-image: url(../images/box-bacg2.png);
+        height: 669px;
+
+    }
+
+    .hero-title {
+        width: 250px;
+
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 26px;
+
+    }
+
+    .hero-desc {
+        width: 205px;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.2px;
+
+    }
+
+    .hero-btn {
+        margin-left: 70px;
+        margin-top: 100px;
+    }
+
+    .desc-container {
+
+        background-image: url(../images/desc-bacg2.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: bottom left;
+        height: 700px;
+        margin-right: 15px;
+    }
+
+    .desc-title {
+        font-size: 20px;
+        line-height: 22px;
+
+
+    }
+
+    .desc-job p {
+        font-size: 14px;
+        line-height: 18px;
+        width: 267px;
+
+    }
+
+    .desc-job button {
+        margin-left: 70px;
+    }
+
+    .description p {
+        width: 300px;
+    }
+
+    .description button {
+        margin-left: 70px;
+    }
+
+
+} 
