@@ -22,7 +22,7 @@ body {
 }
 
 .header-section {
-    background-image: url(../images/box.png);
+    background-image: url(../img/box.png);
     background-position: center;
     background-repeat: no-repeat;
     background-position: center;
@@ -200,7 +200,7 @@ header {
 }
 
 .desc-container {
-    background-image: url(../images/desc-bacg.png);
+    background-image: url(../img/desc-bacg.png);
     background-repeat: no-repeat;
     background-position: right;
     height: 595px;
@@ -412,7 +412,7 @@ header {
     }
 
     .header-section {
-        background-image: url(../images/box-bacg.png);
+        background-image: url(../img/box-bacg.png);
 
 
     }
@@ -441,7 +441,7 @@ header {
     }
 
     .desc-container {
-        background-image: url(../images/desc-bacg1.png);
+        background-image: url(../img/desc-bacg1.png);
         background-repeat: no-repeat;
         background-position: right;
         height: 497px;
@@ -499,7 +499,7 @@ header {
     }
 
     .header-section {
-        background-image: url(../images/box-bacg2.png);
+        background-image: url(../img/box-bacg2.png);
         height: 669px;
 
     }
@@ -529,7 +529,7 @@ header {
 
     .desc-container {
 
-        background-image: url(../images/desc-bacg2.png);
+        background-image: url(../img/desc-bacg2.png);
         background-size: auto;
         background-repeat: no-repeat;
         background-position: bottom left;
